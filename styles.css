@@ -59,15 +59,6 @@ body {
     body {
         font-size: 14px;
     }
-    .accueil-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .image-content img {
-        width: 150px; /* Réduction de l'image pour les petits écrans */
-        margin-top: 20px; /* Espacement au-dessus de l'image */
-    }
 }
 
 #accueil {
@@ -560,11 +551,20 @@ h2 {
         width: 100%;
     }
 
-    .burger-menu {
-        display: block;
+    header {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
     }
 
-    .main-nav.active ul {
-        display: flex;
+    .burger-menu {
+        position: absolute;
+        right: 10px;
+    }
+
+    /* Ajuste le positionnement du texte sur l'image */
+    #accueil h1 {
+        font-size: 22px; /* Réduit la taille du texte */
     }
 }
