@@ -23,8 +23,16 @@ nav ul {
 }
 /* Pour mobile */
 @media (max-width: 768px) {
+    .profile-image img {
+        width: 70px; /* Réduire la taille de l'image */
+        height: 70px;
+        margin-right: 10px; 
+    }
     header {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
     }
     
     nav ul {
@@ -255,7 +263,7 @@ section {
     }
 
     .about-image img {
-        max-height: none; /* Supprime la limite en hauteur pour mobile */
+        max-height: none; 
     }
 }
 
@@ -410,7 +418,7 @@ h2 {
 
 
 .testimonial-background {
-    background-image: url('images/background2.jpg'); /* Remplace par le chemin de ton image */
+    background-image: url('images/background2.jpg'); 
     background-size: cover;
     background-position: center;
     position: relative;
