@@ -59,6 +59,15 @@ body {
     body {
         font-size: 14px;
     }
+    .accueil-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-content img {
+        width: 150px; /* Réduction de l'image pour les petits écrans */
+        margin-top: 20px; /* Espacement au-dessus de l'image */
+    }
 }
 
 #accueil {
