@@ -551,20 +551,11 @@ h2 {
         width: 100%;
     }
 
-    header {
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        position: relative;
-    }
-
     .burger-menu {
-        position: absolute;
-        right: 10px;
+        display: block;
     }
 
-    /* Ajuste le positionnement du texte sur l'image */
-    #accueil h1 {
-        font-size: 22px; /* Réduit la taille du texte */
+    .main-nav.active ul {
+        display: flex;
     }
 }
