@@ -11,6 +11,44 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+/* Pour mobile */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-section {
+        flex-direction: column;
+    }
+
+    .portfolio-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-item {
+        width: 100%; /* L'élément occupe toute la largeur sur mobile */
+    }
+}
+body {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
 }
 
 #accueil {
@@ -153,29 +191,33 @@ section {
 
 .about-container {
     display: flex;
-    align-items: stretch; /* Aligne les éléments sur toute la hauteur disponible */
+    align-items: stretch; 
     justify-content: space-between;
+    gap: 20px;
 }
 
 .about-image {
-    flex: 1; /* L'image occupe 50% de l'espace */
+    flex: 1; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .about-image img {
-    width: 80%;
-    height: auto; /* Remplit tout l'espace disponible */
-    object-fit: cover; /* Garde les proportions de l'image */
+    width: 55%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
     border-radius: 10px;
+    max-height: 500px;
 }
 
 .about-text {
-    flex: 1; /* Le texte occupe également 50% */
+    flex: 1; 
     margin-left: 30px;
     height: auto;
     width: 100%;
+    max-width: 60%;
 }
 
 .about-text h2 {
@@ -188,6 +230,21 @@ section {
     color: #34495e;
     line-height: 1.8;
     
+}
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image, .about-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-height: none; /* Supprime la limite en hauteur pour mobile */
+    }
 }
 
 
