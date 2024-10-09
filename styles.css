@@ -24,8 +24,8 @@ nav ul {
 /* Pour mobile */
 @media (max-width: 768px) {
     .profile-image img {
-        width: 60px; 
-        height: 60px;
+        width: 20px; 
+        height: 20px;
         left: 5px;
         top: 5px;
     }
