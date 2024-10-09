@@ -33,3 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
     showSlide(currentIndex);
     setInterval(nextSlide, 5000); // Change de témoignage toutes les 5 secondes
 });
+document.querySelector('.burger-menu').addEventListener('click', function() {
+    document.querySelector('.main-nav').classList.toggle('active');
+});
